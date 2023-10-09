@@ -1,0 +1,38 @@
+{
+	"name": "voltbras-backend",
+	"version": "0.0.1",
+	"main": "app.ts",
+	"author": "Joao Wictor Felipe <joaowictor756@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/app.ts",
+		"lint": "eslint '**/*.ts' --max-warnings=0",
+		"test": "jest --detectOpenHandles",
+		"prettier": "prettier --write '**/*.ts'"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^3.2.0",
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.36",
+		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/parser": "^5.27.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-typescript": "^2.7.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^8.0.1",
+		"prettier": "^2.6.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^4.7.3"
+	},
+	"dependencies": {
+		"axios": "^1.5.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"winston": "^3.7.2"
+	}
+}
